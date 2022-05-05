@@ -19,23 +19,20 @@
                 <th>Descripción</th>
                 <th>Imagen</th>
                 <th>Cuidados</th>
-                <th>Acción</th>
-                <th>Acción</th>
+
             </tr>
+            
             <tr th:each="plantas: ${tipos_plantas}">
     			<td th:text="${plantas.id}" />
                 <td th:text="${plantas.nombre}" />
                  <td th:text="${plantas.ubicacion}" />
                 <td th:text="${plantas.descripcion}" />
-                 <td th:text="${plantas.imagen}" />
-                <td th:text="${plantas.cuidados}"/>
                  <td> 
                 	<img th:src="${plantas.imagen}" width='100px' />
                 </td>
-               
-                <td>Borrar</td>
-    			<td>Modificar</td> 
-			</tr>
+                
+                <td th:text="${plantas.cuidados}"/>
+                 </tr>
         </table>
     </div>
     <div>

@@ -1,5 +1,5 @@
 body{
-	background-color:antiquewhite ;
+	
 	}
 	td{
 		font-size: 15px;
@@ -62,4 +62,14 @@ body{
 	}
 	.introducir{
 	margin-left: 1%;
+	}
+	
+	#bPlantas{
+	background-color: rgb(81, 255, 0);
+	font-size:25px;
+	
+    }	
+	
+	#fotoadmin{
+	width:500px;
 	}
