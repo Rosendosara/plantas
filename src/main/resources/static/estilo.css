@@ -1,0 +1,65 @@
+body{
+	background-color:antiquewhite ;
+	}
+	td{
+		font-size: 15px;
+	}
+	
+	tr:first-child{
+		color: white;
+		background-color:rgba(0, 183, 255, 0.602);
+	}
+	
+	tr:nth-child(3){
+		   background-color: rgba(243, 243, 243, 0.986);
+	}
+	tr:nth-child(5){
+		background-color: rgba(243, 243, 243, 0.986);
+	}
+	tr:nth-child(7){
+		background-color: rgba(243, 243, 243, 0.986);
+    }
+	tr:nth-child(9){
+		background-color: rgba(243, 243, 243, 0.986);
+	}
+	tr:nth-child(even){
+		color:rgb(10, 10, 10);
+		background-color: rgb(142, 176, 228); 
+	}
+	td:first-child{
+		font-weight: bold;
+		text-align: right; 
+	}
+	td:nth-child(even){
+		text-align:center;
+	}
+	td:nth-child(3){
+		text-align: center;
+	
+	}
+	td:nth-child(7){
+		text-align: center;
+	
+	}
+	td:nth-child(9){
+		text-align: center;
+	
+	}
+	td:nth-child(11){
+		text-align: center;
+	
+	}
+	.tabla{
+	margin-top:5%;
+	margin-left:center;	
+	}
+
+	.boton-enviar{
+		background-color:blueviolet;
+		font-size: 1em;
+		color:white;
+		margin-top: 2%;
+	}
+	.introducir{
+	margin-left: 1%;
+	}

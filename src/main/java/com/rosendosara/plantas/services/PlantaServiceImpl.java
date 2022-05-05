@@ -9,10 +9,15 @@ import com.rosendosara.plantas.entities.Planta;
 import com.rosendosara.plantas.repository.IPlantasRepository;
 
 @Service
-public class PlantaServiceImp  implements IPlantaService{
+public class PlantaServiceImpl  implements IPlantaService{
 	
 	@Autowired
 	IPlantasRepository plantasRepository;
+	
+	@Override
+	public void addPlantas(Planta c) {
+		plantasRepository.save(c);
+	}
 
 	@Override
 	public List<Planta> findAll() {

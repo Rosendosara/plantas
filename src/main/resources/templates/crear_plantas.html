@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearPlantas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Plantas</h1>
+	<p th:text="${nombre}">xx</p>
+    <div>
+        <table class="tabla">
+            <tr>
+                <th>Identificador</th>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Descripción</th>
+                <th>Imagen</th>
+                <th>Cuidados</th>
+                <th>Acción</th>
+                <th>Acción</th>
+            </tr>
+            <tr th:each="plantas: ${tipos_plantas}">
+    			<td th:text="${plantas.id}" />
+                <td th:text="${plantas.nombre}" />
+                 <td th:text="${plantas.ubicacion}" />
+                <td th:text="${plantas.descripcion}" />
+                 <td th:text="${plantas.imagen}" />
+                <td th:text="${plantas.cuidados}"/>
+                 <td> 
+                	<img th:src="${plantas.imagen}" width='100px' />
+                </td>
+               
+                <td>Borrar</td>
+    			<td>Modificar</td> 
+			</tr>
+        </table>
+    </div>
+    <div>
+        <form method="get" action="/crearPlantas">
+            <input type="text" name="nombre" placeholder="Nombre de la planta">
+             <input type="text" name="ubicacion" placeholder="Ubicación/Interior-Exterior">
+             <input type="text" name="descripcion" placeholder="Descripción de la planta">
+            <input type="text" name="imagen" placeholder="URL de la imagen">
+            
+            <input type="text" name="cuidados" placeholder="Cuidados de la planta">
+        
+        
+            <input class="boton-enviar" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
