@@ -1,23 +1,17 @@
 package com.rosendosara.plantas.controllers;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
 import com.rosendosara.plantas.entities.Planta;
 import com.rosendosara.plantas.services.IPlantaService;
 
-
-
-	@Controller
+@Controller
 public class PlantasController {
-		@Autowired
+@Autowired
 		private IPlantaService PlantaService;
 
 		@RequestMapping(value = "/crearPlantas")

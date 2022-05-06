@@ -1,6 +1,4 @@
-body{
-	
-	}
+
 	td{
 		font-size: 15px;
 	}
@@ -65,11 +63,23 @@ body{
 	}
 	
 	#bPlantas{
-	background-color: rgb(81, 255, 0);
-	font-size:25px;
+	background-color: rgb(123, 194, 101);
+	font-size:30px;
+	margin-top:15%;
+	margin-left:45%;
+	font-family: 'Lobster', cursive; 
+	 
 	
     }	
 	
 	#fotoadmin{
-	width:500px;
+	position:absolute;
+	width: 630px;
+	margin-top: -10px;
+	}
+	
+	#texto-principal{
+	margin-left:50%;
+	font-family: 'Lobster', cursive;
+	font-size:50px; 
 	}

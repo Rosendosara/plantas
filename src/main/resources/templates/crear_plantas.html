@@ -25,12 +25,11 @@
             <tr th:each="plantas: ${tipos_plantas}">
     			<td th:text="${plantas.id}" />
                 <td th:text="${plantas.nombre}" />
-                 <td th:text="${plantas.ubicacion}" />
+                <td th:text="${plantas.ubicacion}" />
                 <td th:text="${plantas.descripcion}" />
-                 <td> 
+                <td> 
                 	<img th:src="${plantas.imagen}" width='100px' />
                 </td>
-                
                 <td th:text="${plantas.cuidados}"/>
                  </tr>
         </table>
@@ -41,11 +40,8 @@
              <input type="text" name="ubicacion" placeholder="Ubicación/Interior-Exterior">
              <input type="text" name="descripcion" placeholder="Descripción de la planta">
             <input type="text" name="imagen" placeholder="URL de la imagen">
-            
             <input type="text" name="cuidados" placeholder="Cuidados de la planta">
-        
-        
-            <input class="boton-enviar" type="submit" value="Enviar">
+        <input class="boton-enviar" type="submit" value="Enviar">
         </form>
     </div>
 </body>
